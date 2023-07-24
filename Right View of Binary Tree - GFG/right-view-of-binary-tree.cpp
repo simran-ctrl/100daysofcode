@@ -51,7 +51,7 @@ class Solution
       solve(root,ans,1,&last);
       return ans;
     }
-    private:
+    public:
     void solve(Node* root, vector<int>& ans,int level,int* last){
         if(!root) return;
         if(*last<level){
