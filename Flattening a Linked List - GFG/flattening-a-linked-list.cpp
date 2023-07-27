@@ -130,6 +130,7 @@ struct Node{
                 ans=b;
                 b->bottom=merge(a,b->bottom); 
             }
+            
             return ans;
         }
     }
