@@ -9,7 +9,7 @@ class Solution{
     int firstElementKTime(int a[], int n, int k)
     {
         unordered_map<int, int> freqMap;
-        bool seen[n] = {false};
+       
         for (int i = 0; i < n; i++) {
         freqMap[a[i]]++;
        
