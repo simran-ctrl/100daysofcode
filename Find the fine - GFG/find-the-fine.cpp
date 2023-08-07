@@ -11,7 +11,8 @@ class Solution{
   public:
     long long int totalFine(int n, int date, int car[], int fine[])
     {
-        long long int total = 0;  // Initialize total fine to zero
+        
+  long long int total = 0;  // Initialize total fine to zero
 
     for (int i = 0; i < n; i++) {
         // Check if the car number is odd and the date is even
@@ -22,7 +23,8 @@ class Solution{
     }
 
     return total;
-    }
+}
+    
 };
 
 //{ Driver Code Starts.
