@@ -19,10 +19,10 @@ public:
     }
     
     // Fill the remaining elements with zeros
-    while (count < n) {
-        arr[count] = 0;
-        count++;
-    }
+    // while (count < n) {
+    //     arr[count] = 0;
+    //     count++;
+    // }
 	        
 	    
 	}
