@@ -13,7 +13,7 @@ public:
     // Traverse through the array and move non-zero elements to the front
     for (int i = 0; i < n; i++) {
         if (arr[i] != 0) {
-            arr[count] = arr[i];
+           swap( arr[count] , arr[i]);
             count++;
         }
     }
