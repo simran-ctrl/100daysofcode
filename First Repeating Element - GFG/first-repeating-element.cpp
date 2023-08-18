@@ -14,7 +14,7 @@ class Solution {
         // code here
         unordered_map<int, int> indexMap;
 
-    int minIndex = n; // Initialize with a value larger than n
+    int minIndex = INT_MAX;; // Initialize with a value larger than n
 
     for (int i = 0; i < n; i++) {
         if (indexMap.find(arr[i]) != indexMap.end()) {
@@ -24,7 +24,7 @@ class Solution {
         }
     }
 
-    if (minIndex == n) {
+    if (minIndex == INT_MAX) {
         return -1; // No repeating element found
     } else {
         return minIndex + 1; // Return the 1-based index
