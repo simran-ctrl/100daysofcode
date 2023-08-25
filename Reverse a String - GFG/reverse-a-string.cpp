@@ -15,21 +15,15 @@ class Solution
     string reverseWord(string str)
     {
         // Your code goes here
-        int left = 0;                 // Index of the leftmost character
-    int right = str.length() - 1; // Index of the rightmost character
-
-    while (left < right) {
-        // Swap characters at left and right indices
-        char temp = str[left];
-        str[left] = str[right];
-        str[right] = temp;
-
-        // Move indices towards the center
-        left++;
-        right--;
-    }
-
-    return str;
+        int n=str.length();
+       int i=0;
+       int j=n-1;
+       while(i<=j){
+           swap(str[i],str[j]);
+           i++;
+           j--;
+       }
+       return str;
     }
 };
 
